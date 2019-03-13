@@ -1,7 +1,7 @@
-import express from 'express';
-import db from './data';
+const db = require('./data');
 // Set up the express app
-const app = express();
+const express = require('express')
+const app = express()
 // get all todos
 app.get('/todos', (req, res) => {
     res.status(200).send({
